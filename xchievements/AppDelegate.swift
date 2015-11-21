@@ -1,20 +1,21 @@
-//
-//  AppDelegate.swift
-//  xchievements
-//
-//  Created by Christian Soler on 11/21/15.
-//  Copyright © 2015 Christian Soler. All rights reserved.
-//
-
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        // Initialize Parse.
+        Parse.setApplicationId("ZbsmNrnAoWvV4miJsVzkr4qwSlodOyFzhYWHECbI",
+            clientKey: "m7OKzx9QpP0feloktBKxlBIJXcjCNSWvI4H4LOJN")
+        
+        // Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         // Override point for customization after application launch.
         return true
     }
