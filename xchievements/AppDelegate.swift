@@ -6,6 +6,7 @@ import Bolts
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let uiColor = UIColor(red: 15.0/255.0, green: 125.0/255.0, blue: 13.0/255.0, alpha: 1.0)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
@@ -18,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = UIColor(red: 15.0/255.0, green: 125.0/255.0, blue: 13.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = self.uiColor
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        UITabBar.appearance().barTintColor = UIColor(red: 15.0/255.0, green: 125.0/255.0, blue: 13.0/255.0, alpha: 1.0)
+        UITabBar.appearance().barTintColor = self.uiColor
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightTextColor()], forState:.Normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
         

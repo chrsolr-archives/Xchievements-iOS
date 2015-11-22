@@ -1,11 +1,3 @@
-//
-//  LatestAchievementsTVC.swift
-//  xchievements
-//
-//  Created by Christian Soler on 11/21/15.
-//  Copyright © 2015 Christian Soler. All rights reserved.
-//
-
 import UIKit
 import Parse
 
@@ -13,6 +5,7 @@ class LatestAchievementsTVC: UITableViewController {
     
     @IBOutlet var tableview: UITableView!
     
+    var loginButton: UIBarButtonItem!
     var bannerUrl: String = ""
     var games = [PFObject]()
     var banner: PFObject!
@@ -22,16 +15,20 @@ class LatestAchievementsTVC: UITableViewController {
         
         self.tableview.estimatedRowHeight = 184.0
         self.tableview.rowHeight = UITableViewAutomaticDimension
-        
         self.tableview.tableFooterView = UIView(frame: CGRectZero)
         self.tableview.backgroundColor = UIColor.whiteColor()
         
+        self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
         self.getBanner()
+        
+        loginButton = self.navigationItem.rightBarButtonItem
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        if (PFUser.currentUser() != nil) {
+            self.navigationItem.rightBarButtonItem = nil
+        }
     }
     
     // MARK: - Table view data source
@@ -74,6 +71,7 @@ class LatestAchievementsTVC: UITableViewController {
         query.includeKey("game")
         query.orderByDescending("createdAt")
         query.limit = 1
+        query.whereKey("show", equalTo: true)
         query.getFirstObjectInBackgroundWithBlock { (object:PFObject?, error:NSError?) -> Void in
             
             if error == nil {
@@ -87,12 +85,14 @@ class LatestAchievementsTVC: UITableViewController {
         let query = PFQuery(className:"Games")
         query.orderByDescending("createdAt")
         query.limit = 26
+        query.whereKey("show", equalTo: true)
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
             
             if error == nil {
                 self.games = objects!
                 self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
             } else {
                 print("Error: \(error!) \(error!.userInfo)")
             }
@@ -114,5 +114,9 @@ class LatestAchievementsTVC: UITableViewController {
         if cell.respondsToSelector("setLayoutMargins:") {
             cell.layoutMargins = UIEdgeInsetsZero
         }
+    }
+    
+    func refresh(sender: AnyObject){
+        self.getBanner()
     }
 }
