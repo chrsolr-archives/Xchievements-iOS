@@ -15,9 +15,11 @@ class BannerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var BannerTitleBg: UIView!
     
-    func configureCellWith(banner: PFObject){
-        self.BannerTitleLabel.text = banner.objectForKey("game")!["title"] as? String
-        self.BannerImageView.imageFromUrl(banner.objectForKey("imageUrl") as! String)
-        self.BannerTitleBg.layerGradient()
+    func configureCellWith(banner: PFObject!){
+        if let game = banner {
+            self.BannerTitleLabel.text = game.objectForKey("game")!["title"] as! String
+            self.BannerImageView.imageFromUrl(game.objectForKey("imageUrl") as! String)
+            self.BannerTitleBg.layerGradient()
+        }
     }
 }
