@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barTintColor = UIColor(red: 15.0/255.0, green: 125.0/255.0, blue: 13.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UITabBar.appearance().barTintColor = UIColor(red: 15.0/255.0, green: 125.0/255.0, blue: 13.0/255.0, alpha: 1.0)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightTextColor()], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
+        
+        // Override point for customization after application launch.
         return true
     }
 
