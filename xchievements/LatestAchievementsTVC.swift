@@ -66,6 +66,19 @@ class LatestAchievementsTVC: UITableViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            
+            if identifier == "GameInfoSegue" {
+                let gameInfoVC = segue.destinationViewController as? GameInfoVC
+                
+                if let index = self.tableview.indexPathForCell(sender as! UITableViewCell) {
+                    gameInfoVC!.game = self.games[index.row - 1]
+                }
+            }
+        }
+    }
+    
     private func getBanner(){
         let query = PFQuery(className:"Banners")
         query.includeKey("game")

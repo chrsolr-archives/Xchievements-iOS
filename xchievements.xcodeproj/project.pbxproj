@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5921C028CA000931FFF /* GameInfoVC.swift */; };
+		3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */; };
 		37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */; };
 		37A5F13D1C00D18C00DE3DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A5F13B1C00D18C00DE3DC1 /* Main.storyboard */; };
 		37A5F1421C00D18C00DE3DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A5F1401C00D18C00DE3DC1 /* LaunchScreen.storyboard */; };
@@ -114,6 +116,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3753E5921C028CA000931FFF /* GameInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoVC.swift; sourceTree = "<group>"; };
+		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
 		37A5F1341C00D18B00DE3DC1 /* xchievements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xchievements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A5F13C1C00D18C00DE3DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 			children = (
 				37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */,
 				37E971DA1C0245300076800B /* LoginVC.swift */,
+				3753E5921C028CA000931FFF /* GameInfoVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			children = (
 				37A5F1871C011B5600DE3DC1 /* BannerTableViewCell.swift */,
 				37A5F18A1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift */,
+				3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -444,8 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */,
 				37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */,
 				37A5F1881C011B5600DE3DC1 /* BannerTableViewCell.swift in Sources */,
+				3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */,
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,
 				37A5F18B1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift in Sources */,
 				37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */,
