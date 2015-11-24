@@ -46,9 +46,16 @@ class LatestAchievementsTVC: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if (indexPath.row == 0) {
-            let cell = tableView.dequeueReusableCellWithIdentifier("GameBanner", forIndexPath: indexPath) as! BannerTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("GameBanner", forIndexPath: indexPath)
             
-            cell.configureCellWith(self.banner)
+            if let data = self.banner {
+                let bannerImageView = cell.viewWithTag(1) as! UIImageView
+                let titleLabel = cell.viewWithTag(2) as! UILabel
+                
+                bannerImageView.layerGradient()
+                bannerImageView.imageFromUrl(data["game"]["bannerImageUrl"] as! String)
+                titleLabel.text = data["game"]["title"] as? String
+            }
             
             self.tableView.rowHeight = 215.0
             
@@ -56,10 +63,17 @@ class LatestAchievementsTVC: UITableViewController {
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("Achievements", forIndexPath: indexPath) as! LatestAchievementsTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Achievements", forIndexPath: indexPath)
             
-            cell.configureCellWith(self.games[indexPath.row - 1])
+            let data = self.games[indexPath.row - 1]
+            let coverImageView = cell.viewWithTag(1) as! UIImageView
+            let titleLabel = cell.viewWithTag(2) as! UILabel
+            let achAmountLabel = cell.viewWithTag(3) as! UILabel
             
+            coverImageView.imageFromUrl(data["imageUrl"] as! String)
+            titleLabel.text = data["title"] as? String
+            achAmountLabel.text = "\(data["achievementCount"] as! Int) Achievements"
+
             self.removeDividerPadding(cell)
             
             return cell

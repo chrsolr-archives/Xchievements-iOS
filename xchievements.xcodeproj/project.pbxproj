@@ -32,8 +32,6 @@
 		37A5F17E1C00D33100DE3DC1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A5F17D1C00D33100DE3DC1 /* libsqlite3.tbd */; };
 		37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1821C00F7A600DE3DC1 /* UIImageExtensions.swift */; };
 		37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */; };
-		37A5F1881C011B5600DE3DC1 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1871C011B5600DE3DC1 /* BannerTableViewCell.swift */; };
-		37A5F18B1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F18A1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift */; };
 		37A5F1CE1C013F9000DE3DC1 /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 37A5F1CD1C013F9000DE3DC1 /* Alamofire */; };
 		37A5F1E71C013FAE00DE3DC1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A5F1DA1C013F9C00DE3DC1 /* Alamofire.framework */; };
 		37A5F1E81C013FAE00DE3DC1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37A5F1DA1C013F9C00DE3DC1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -143,8 +141,6 @@
 		37A5F17D1C00D33100DE3DC1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		37A5F1821C00F7A600DE3DC1 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestAchievementsTVC.swift; sourceTree = "<group>"; };
-		37A5F1871C011B5600DE3DC1 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
-		37A5F18A1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestAchievementsTableViewCell.swift; sourceTree = "<group>"; };
 		37A5F1CD1C013F9000DE3DC1 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Alamofire; sourceTree = "<group>"; };
 		37A5F1CF1C013F9B00DE3DC1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -296,8 +292,6 @@
 		37A5F1891C011B5900DE3DC1 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				37A5F1871C011B5600DE3DC1 /* BannerTableViewCell.swift */,
-				37A5F18A1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift */,
 				3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */,
 			);
 			name = TableViewCells;
@@ -452,10 +446,8 @@
 			files = (
 				3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */,
 				37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */,
-				37A5F1881C011B5600DE3DC1 /* BannerTableViewCell.swift in Sources */,
 				3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */,
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,
-				37A5F18B1C01265700DE3DC1 /* LatestAchievementsTableViewCell.swift in Sources */,
 				37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */,
 				37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */,
 				37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */,
