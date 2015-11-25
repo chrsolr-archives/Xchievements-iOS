@@ -38,7 +38,7 @@ class GameInfoTVCC: UITableViewCell {
                 }
             }
             
-            print(gameInfo)
+            //print(gameInfo)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372AF42A1C04E1A500A1148B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AF4291C04E1A500A1148B /* RegisterVC.swift */; };
 		3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5921C028CA000931FFF /* GameInfoVC.swift */; };
 		3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */; };
 		37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */; };
@@ -114,6 +115,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		372AF4291C04E1A500A1148B /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		3753E5921C028CA000931FFF /* GameInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoVC.swift; sourceTree = "<group>"; };
 		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
 		37A5F1341C00D18B00DE3DC1 /* xchievements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xchievements.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +228,7 @@
 				37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */,
 				37E971DA1C0245300076800B /* LoginVC.swift */,
 				3753E5921C028CA000931FFF /* GameInfoVC.swift */,
+				372AF4291C04E1A500A1148B /* RegisterVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */,
+				372AF42A1C04E1A500A1148B /* RegisterVC.swift in Sources */,
 				37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */,
 				3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */,
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,

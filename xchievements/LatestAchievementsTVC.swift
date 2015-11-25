@@ -23,6 +23,8 @@ class LatestAchievementsTVC: UITableViewController {
         self.getBanner()
         
         loginButton = self.navigationItem.rightBarButtonItem
+        
+        //PFUser.logOut()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -52,7 +54,6 @@ class LatestAchievementsTVC: UITableViewController {
                 let bannerImageView = cell.viewWithTag(1) as! UIImageView
                 let titleLabel = cell.viewWithTag(2) as! UILabel
                 
-                bannerImageView.layerGradient()
                 bannerImageView.imageFromUrl(data["game"]["bannerImageUrl"] as! String)
                 titleLabel.text = data["game"]["title"] as? String
             }
@@ -68,10 +69,13 @@ class LatestAchievementsTVC: UITableViewController {
             let data = self.games[indexPath.row - 1]
             let coverImageView = cell.viewWithTag(1) as! UIImageView
             let titleLabel = cell.viewWithTag(2) as! UILabel
-            let achAmountLabel = cell.viewWithTag(3) as! UILabel
+            let gamerscoreLabel = cell.viewWithTag(3) as! UILabel
+            let achAmountLabel = cell.viewWithTag(4) as! UILabel
+            
             
             coverImageView.imageFromUrl(data["imageUrl"] as! String)
             titleLabel.text = data["title"] as? String
+            gamerscoreLabel.text = "\(data["gamerScore"] as! Int) Gamerscore"
             achAmountLabel.text = "\(data["achievementCount"] as! Int) Achievements"
 
             self.removeDividerPadding(cell)
