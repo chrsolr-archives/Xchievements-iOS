@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import Alamofire
+import AlamofireImage
 
 class GameInfoTVCC: UITableViewCell {
 
@@ -26,7 +28,7 @@ class GameInfoTVCC: UITableViewCell {
             let genres = gameInfo.objectForKey("genre") as! [String]
             let releases = gameInfo.objectForKey("releases") as! [AnyObject]
             
-            CoverImageView.imageFromUrl(gameInfo.objectForKey("imageUrl") as! String)
+            CoverImageView.af_setImageWithURL(NSURL(string: gameInfo.objectForKey("imageUrl") as! String)!)
             TitleLabel.text = gameInfo.objectForKey("title") as? String
             PublisherLabel.text = gameInfo.objectForKey("publisher") as? String
             DeveloperLabel.text = gameInfo.objectForKey("developer") as? String

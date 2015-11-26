@@ -9,12 +9,16 @@
 import Foundation
 import UIKit
 import Alamofire
+import AlamofireImage
 
 
 extension UIImageView {
-    public func imageFromUrl(url: String) {
-        Alamofire.request(.GET, url).response { (request, response, data, error) in
-            self.image = UIImage(data: data!)
+        public func imageFromUrl(url: String) {
+//            Alamofire.request(.GET, url)
+//                .responseImage { response in
+//                    if let image = response.result.value {
+//                        self.image = image
+//                    }
+//            }
         }
-    }
 }

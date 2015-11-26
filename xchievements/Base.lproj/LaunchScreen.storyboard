@@ -38,7 +38,7 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.074509803920000006" green="0.3921568627" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kbv-Q3-aON" firstAttribute="top" secondItem="nTh-eE-NZe" secondAttribute="bottom" constant="8" symbolic="YES" id="2fy-jR-CIq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kbv-Q3-aON" secondAttribute="trailing" id="E8W-bK-H5v"/>

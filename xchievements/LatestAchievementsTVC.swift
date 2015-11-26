@@ -1,5 +1,7 @@
 import UIKit
 import Parse
+import Alamofire
+import AlamofireImage
 
 class LatestAchievementsTVC: UITableViewController {
     
@@ -16,15 +18,14 @@ class LatestAchievementsTVC: UITableViewController {
         self.tableview.estimatedRowHeight = 184.0
         self.tableview.rowHeight = UITableViewAutomaticDimension
         self.tableview.tableFooterView = UIView(frame: CGRectZero)
-        self.tableview.backgroundColor = UIColor.whiteColor()
+        self.tableview.backgroundColor = UIColor("#1A1A1A")
         
+        self.refreshControl?.tintColor = UIColor("#ffffff")
         self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         
-        self.getBanner()
+        self.getLatestGames()
         
         loginButton = self.navigationItem.rightBarButtonItem
-        
-        //PFUser.logOut()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -33,55 +34,30 @@ class LatestAchievementsTVC: UITableViewController {
         }
     }
     
-    // MARK: - Table view data source
-    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return self.games.count + 1
+        return self.games.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        if (indexPath.row == 0) {
-            let cell = tableView.dequeueReusableCellWithIdentifier("GameBanner", forIndexPath: indexPath)
-            
-            if let data = self.banner {
-                let bannerImageView = cell.viewWithTag(1) as! UIImageView
-                let titleLabel = cell.viewWithTag(2) as! UILabel
-                
-                bannerImageView.imageFromUrl(data["game"]["bannerImageUrl"] as! String)
-                titleLabel.text = data["game"]["title"] as? String
-            }
-            
-            self.tableView.rowHeight = 215.0
-            
-            self.removeDividerPadding(cell)
-            
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("Achievements", forIndexPath: indexPath)
-            
-            let data = self.games[indexPath.row - 1]
-            let coverImageView = cell.viewWithTag(1) as! UIImageView
-            let titleLabel = cell.viewWithTag(2) as! UILabel
-            let gamerscoreLabel = cell.viewWithTag(3) as! UILabel
-            let achAmountLabel = cell.viewWithTag(4) as! UILabel
-            
-            
-            coverImageView.imageFromUrl(data["imageUrl"] as! String)
-            titleLabel.text = data["title"] as? String
-            gamerscoreLabel.text = "\(data["gamerScore"] as! Int) Gamerscore"
-            achAmountLabel.text = "\(data["achievementCount"] as! Int) Achievements"
-
-            self.removeDividerPadding(cell)
-            
-            return cell
-        }
+        let data = self.games[indexPath.row]
+        let bannerIV = cell.viewWithTag(1) as! UIImageView
+        let titleLB = cell.viewWithTag(2) as! UILabel
+        
+        //bannerIV.imageFromUrl(data["bannerImageUrl"] as! String)
+        bannerIV.af_setImageWithURL(NSURL(string: data["bannerImageUrl"] as! String)!)
+        titleLB.text = data["title"] as? String
+        
+        self.tableView.rowHeight = 315.0
+        
+        self.removeDividerPadding(cell)
+        
+        return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -91,23 +67,8 @@ class LatestAchievementsTVC: UITableViewController {
                 let gameInfoVC = segue.destinationViewController as? GameInfoVC
                 
                 if let index = self.tableview.indexPathForCell(sender as! UITableViewCell) {
-                    gameInfoVC!.game = self.games[index.row - 1]
+                    gameInfoVC!.game = self.games[index.row]
                 }
-            }
-        }
-    }
-    
-    private func getBanner(){
-        let query = PFQuery(className:"Banners")
-        query.includeKey("game")
-        query.orderByDescending("createdAt")
-        query.limit = 1
-        query.whereKey("show", equalTo: true)
-        query.getFirstObjectInBackgroundWithBlock { (object:PFObject?, error:NSError?) -> Void in
-            
-            if error == nil {
-                self.banner = object!
-                self.getLatestGames()
             }
         }
     }
@@ -148,6 +109,6 @@ class LatestAchievementsTVC: UITableViewController {
     }
     
     func refresh(sender: AnyObject){
-        self.getBanner()
+        self.getLatestGames()
     }
 }
