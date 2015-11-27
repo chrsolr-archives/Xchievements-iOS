@@ -31,7 +31,7 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let titleLB = cell.viewWithTag(2) as! UILabel
         let descriptionLB = cell.viewWithTag(3) as! UILabel
         
-        bannerIV.af_setImageWithURL(NSURL(string: data["imageUrl"] as! String)!)
+        bannerIV.af_setImageWithURL(NSURL(string: data["imageUrl"] as! String)!, placeholderImage: UIImage(named:"Xchievements-Logo")!)
         titleLB.text = data["title"] as? String
         descriptionLB.text = data["description"] as? String
         
