@@ -49,7 +49,6 @@ class LatestAchievementsTVC: UITableViewController {
         let bannerIV = cell.viewWithTag(1) as! UIImageView
         let titleLB = cell.viewWithTag(2) as! UILabel
         
-        //bannerIV.imageFromUrl(data["bannerImageUrl"] as! String)
         bannerIV.af_setImageWithURL(NSURL(string: data["bannerImageUrl"] as! String)!)
         titleLB.text = data["title"] as? String
         
@@ -63,8 +62,8 @@ class LatestAchievementsTVC: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             
-            if identifier == "GameInfoSegue" {
-                let gameInfoVC = segue.destinationViewController as? GameInfoVC
+            if identifier == "ParentGameSegue" {
+                let gameInfoVC = segue.destinationViewController as? ParentGameVC
                 
                 if let index = self.tableview.indexPathForCell(sender as! UITableViewCell) {
                     gameInfoVC!.game = self.games[index.row]
