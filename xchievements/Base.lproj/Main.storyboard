@@ -564,13 +564,19 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
+                        <outlet property="DeveloperLB" destination="VE1-gw-0N0" id="fCE-rm-07x"/>
+                        <outlet property="GameAchievementsAmountLB" destination="LKK-dl-cxK" id="GZo-l7-Q5V"/>
                         <outlet property="GameImageIV" destination="IqL-dV-Ta0" id="9hI-fH-6Sq"/>
                         <outlet property="GameTitleLB" destination="X2y-lo-xkd" id="Tda-6Q-oHO"/>
+                        <outlet property="GamerscoreLB" destination="xdH-Kb-hpS" id="ghe-4l-PFd"/>
+                        <outlet property="GenreLB" destination="cBJ-pL-TYf" id="5d8-Yj-Bqu"/>
+                        <outlet property="PublisherLB" destination="jDR-Zt-P5E" id="Gks-7O-rw5"/>
+                        <outlet property="UsaReleaseLB" destination="2Xk-6B-YJA" id="0nf-tv-cjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672" y="1464"/>
+            <point key="canvasLocation" x="2673" y="1416"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3AB-qo-nZG">
