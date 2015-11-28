@@ -13,6 +13,7 @@ class GameInfoVC: UIViewController {
     @IBOutlet weak var PublisherLB: UILabel!
     @IBOutlet weak var GenreLB: UILabel!
     @IBOutlet weak var UsaReleaseLB: UILabel!
+    @IBOutlet weak var DescriptionLB: UILabel!
     
     var game: PFObject!
     
@@ -31,6 +32,7 @@ class GameInfoVC: UIViewController {
         DeveloperLB.text = self.game["developer"] as? String
         PublisherLB.text = self.game["publisher"] as? String
         GenreLB.text = genres.joinWithSeparator(" / ")
+        DescriptionLB.text = self.game["description"] as? String
         
         for release in releases {
             if release["region"] as? String == "usa" {
