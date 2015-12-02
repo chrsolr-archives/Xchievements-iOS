@@ -8,6 +8,7 @@ class LatestAchievementsTVC: UITableViewController {
     @IBOutlet var tableview: UITableView!
     
     var loginButton: UIBarButtonItem!
+    var lastCellIndexShowned = 0
     var bannerUrl: String = ""
     var games = [PFObject]()
     var banner: PFObject!
@@ -49,7 +50,7 @@ class LatestAchievementsTVC: UITableViewController {
         let bannerIV = cell.viewWithTag(1) as! UIImageView
         let titleLB = cell.viewWithTag(2) as! UILabel
         
-        bannerIV.af_setImageWithURL(NSURL(string: data["bannerImageUrl"] as! String)!)
+        bannerIV.af_setImageWithURL(NSURL(string: data["bannerUrl"] as! String)!, placeholderImage: UIImage(named:"Xchievements-Logo")!)
         titleLB.text = data["title"] as? String
         
         self.tableView.rowHeight = 315.0
@@ -57,6 +58,20 @@ class LatestAchievementsTVC: UITableViewController {
         self.removeDividerPadding(cell)
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (indexPath.row >= self.lastCellIndexShowned) {
+            
+            cell.alpha = 0
+            
+            UIView.animateWithDuration(0.7, delay: 0.0, options: [.AllowUserInteraction], animations: { () -> Void in
+                cell.alpha = 1
+                }, completion: nil)
+            
+            self.lastCellIndexShowned++
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -73,7 +88,7 @@ class LatestAchievementsTVC: UITableViewController {
     }
     
     private func getLatestGames(){
-        let query = PFQuery(className:"Games")
+        let query = PFQuery(className:"Game")
         query.orderByDescending("createdAt")
         query.limit = 26
         query.whereKey("show", equalTo: true)
@@ -108,6 +123,7 @@ class LatestAchievementsTVC: UITableViewController {
     }
     
     func refresh(sender: AnyObject){
+        self.lastCellIndexShowned = 0
         self.getLatestGames()
     }
 }

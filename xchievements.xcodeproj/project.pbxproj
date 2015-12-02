@@ -14,7 +14,6 @@
 		372AF42A1C04E1A500A1148B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AF4291C04E1A500A1148B /* RegisterVC.swift */; };
 		374F9C681C076D40007B9553 /* ParentGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9C671C076D40007B9553 /* ParentGameVC.swift */; };
 		374F9C6A1C077481007B9553 /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9C691C077481007B9553 /* AchievementsVC.swift */; };
-		374F9C6C1C077492007B9553 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9C6B1C077492007B9553 /* PhotosVC.swift */; };
 		3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5921C028CA000931FFF /* GameInfoVC.swift */; };
 		3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */; };
 		37983D9F1C06907900AD780F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37983D9E1C06907900AD780F /* UIColorExtensions.swift */; };
@@ -44,6 +43,8 @@
 		37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */; };
 		37E971D71C023D900076800B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E971D61C023D900076800B /* Assets.xcassets */; };
 		37E971DB1C0245300076800B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E971DA1C0245300076800B /* LoginVC.swift */; };
+		37F1B98C1C0BB62600B242E9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1B98B1C0BB62600B242E9 /* Common.swift */; };
+		37F1B98F1C0BC46D00B242E9 /* ParseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1B98E1C0BC46D00B242E9 /* ParseHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +68,6 @@
 		372AF4291C04E1A500A1148B /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		374F9C671C076D40007B9553 /* ParentGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentGameVC.swift; sourceTree = "<group>"; };
 		374F9C691C077481007B9553 /* AchievementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
-		374F9C6B1C077492007B9553 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		3753E5921C028CA000931FFF /* GameInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoVC.swift; sourceTree = "<group>"; };
 		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
 		37983D9E1C06907900AD780F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -99,6 +99,8 @@
 		37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		37E971D61C023D900076800B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E971DA1C0245300076800B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		37F1B98B1C0BB62600B242E9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		37F1B98E1C0BC46D00B242E9 /* ParseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,12 +154,13 @@
 		37A5F1361C00D18B00DE3DC1 /* Xchievements */ = {
 			isa = PBXGroup;
 			children = (
-				37A5F14D1C00D24900DE3DC1 /* Libs */,
 				37A5F14B1C00D1DE00DE3DC1 /* Controllers */,
 				37A5F14C1C00D1E600DE3DC1 /* Storyboards */,
-				37A5F1841C00F7EA00DE3DC1 /* Extensions */,
-				37A5F1491C00D1CD00DE3DC1 /* SupportingFiles */,
 				37A5F1891C011B5900DE3DC1 /* TableViewCells */,
+				37F1B98D1C0BB63200B242E9 /* Common */,
+				37A5F1841C00F7EA00DE3DC1 /* Extensions */,
+				37A5F14D1C00D24900DE3DC1 /* Libs */,
+				37A5F1491C00D1CD00DE3DC1 /* SupportingFiles */,
 			);
 			name = Xchievements;
 			path = xchievements;
@@ -183,7 +186,6 @@
 				372AF4291C04E1A500A1148B /* RegisterVC.swift */,
 				374F9C671C076D40007B9553 /* ParentGameVC.swift */,
 				374F9C691C077481007B9553 /* AchievementsVC.swift */,
-				374F9C6B1C077492007B9553 /* PhotosVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +256,15 @@
 				3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */,
 			);
 			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		37F1B98D1C0BB63200B242E9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				37F1B98B1C0BB62600B242E9 /* Common.swift */,
+				37F1B98E1C0BC46D00B242E9 /* ParseHandler.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +364,11 @@
 				37983D9F1C06907900AD780F /* UIColorExtensions.swift in Sources */,
 				3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */,
 				372AF42A1C04E1A500A1148B /* RegisterVC.swift in Sources */,
+				37F1B98C1C0BB62600B242E9 /* Common.swift in Sources */,
+				37F1B98F1C0BC46D00B242E9 /* ParseHandler.swift in Sources */,
 				37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */,
 				3753E5931C028CA000931FFF /* GameInfoVC.swift in Sources */,
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,
-				374F9C6C1C077492007B9553 /* PhotosVC.swift in Sources */,
 				37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */,
 				374F9C6A1C077481007B9553 /* AchievementsVC.swift in Sources */,
 				37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */,

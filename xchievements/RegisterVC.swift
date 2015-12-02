@@ -34,46 +34,29 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     @IBAction func register(sender: AnyObject) {
         
         guard let gamertag = GamertagTextField.text where GamertagTextField.text?.characters.count > 0 else {
-            self.alertError("Gamertag cannot be empty.")
+            Common.dialogAlert(self, title: "Check Gamertag", message: "Gamertag cannot be empty.")
             return
         }
         
         guard let email = EmailTextField.text where EmailTextField.text?.characters.count > 5 else {
-            self.alertError("Email must be atleast 6 characters long.")
+            Common.dialogAlert(self, title: "Check Email", message: "Email must be atleast 6 characters long.")
             return
         }
         
         guard let password = PasswordTextField.text where PasswordTextField.text?.characters.count > 5 && PasswordTextField.text == ConfirmPasswordTextField.text else {
-            self.alertError("Please check your password.")
+            Common.dialogAlert(self, title: "Check Password", message: "Please check your password.")
             return
         }
         
-        let user = PFUser()
-        user.username = email
-        user.email = email
-        user.password = password
-        user["gamertag"] = gamertag
-        user["postCount"] = 0
-        
-        user.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in
-            if let error = error {
-                self.alertError((error.userInfo["error"] as? String)!)
+        ParseHandler.register(gamertag, email: email, password: password, completion: {
+            (success, message) -> Void in
+            
+            if (success) {
+                self.navigationController?.popToRootViewControllerAnimated(true)
             } else {
-                let queryRole = PFRole.query()
-                queryRole?.whereKey("name", equalTo:"User")
-                queryRole?.getFirstObjectInBackgroundWithBlock({ (role: PFObject?, error: NSError?) -> Void in
-                    if error == nil {
-                        let roleToAddUser = role as! PFRole
-                        
-                        roleToAddUser.users.addObject(PFUser.currentUser()!)
-                        roleToAddUser.saveInBackground()
-                        
-                        self.navigationController?.popToRootViewControllerAnimated(true)
-                    }
-                })
+                Common.dialogAlert(self, title: "Error", message: message)
             }
-        }
+        })
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -94,13 +77,5 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     
     func dismissKeyboard() {
         view.endEditing(true)
-    }
-    
-    private func alertError(error: String) {
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        
-        self.presentViewController(alert, animated: true, completion: nil)
     }
 }

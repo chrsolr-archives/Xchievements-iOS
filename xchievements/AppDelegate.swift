@@ -1,29 +1,27 @@
 import UIKit
 import Parse
 import Bolts
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let primaryColor = UIColor("#1A1A1A")
-    let secondaryColor = UIColor("#333333")
-    let accentColor = UIColor("#f96816")
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         // Initialize Parse.
-        Parse.setApplicationId("ZbsmNrnAoWvV4miJsVzkr4qwSlodOyFzhYWHECbI",
-            clientKey: "m7OKzx9QpP0feloktBKxlBIJXcjCNSWvI4H4LOJN")
+        Parse.setApplicationId(Common.PARSE_APP_ID,
+            clientKey: Common.PARSE_CLIENT_ID)
         
         // Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
 
         // colors
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = self.primaryColor
+        UINavigationBar.appearance().barTintColor = Common.PRIMARY_COLOR
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        UITabBar.appearance().barTintColor = self.primaryColor
+        UITabBar.appearance().barTintColor = Common.PRIMARY_COLOR
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightTextColor()], forState:.Normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
         

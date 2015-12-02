@@ -13,6 +13,7 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
+    var lastCellIndexShowned = 0
     var game: PFObject!
     var achievements = [PFObject]()
     
@@ -25,13 +26,12 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
-        
         let data = self.achievements[indexPath.row]
         let bannerIV = cell.viewWithTag(1) as! UIImageView
         let titleLB = cell.viewWithTag(2) as! UILabel
         let descriptionLB = cell.viewWithTag(3) as! UILabel
         
-        bannerIV.af_setImageWithURL(NSURL(string: data["imageUrl"] as! String)!, placeholderImage: UIImage(named:"Xchievements-Logo")!)
+        bannerIV.af_setImageWithURL(NSURL(string: data["artworkUrl"] as! String)!, placeholderImage: UIImage(named:"Xchievements-Logo")!)
         titleLB.text = data["title"] as? String
         descriptionLB.text = data["description"] as? String
         
@@ -44,8 +44,22 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return self.achievements.count
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (indexPath.row >= self.lastCellIndexShowned) {
+            
+            cell.alpha = 0
+            
+            UIView.animateWithDuration(0.7, delay: 0.0, options: [.AllowUserInteraction], animations: { () -> Void in
+                cell.alpha = 1
+                }, completion: nil)
+            
+            self.lastCellIndexShowned++
+        }
+    }
+    
     private func getAchievements(){
-        let query = PFQuery(className:"Achievements")
+        let query = PFQuery(className:"Achievement")
         query.whereKey("gameId", equalTo: self.game["gameId"] as! String)
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in

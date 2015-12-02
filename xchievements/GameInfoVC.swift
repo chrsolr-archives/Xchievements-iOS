@@ -20,15 +20,15 @@ class GameInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor("#1A1A1A")
+        self.view.backgroundColor = Common.PRIMARY_COLOR
         
         let genres = self.game["genre"] as! [String]
         let releases = game["releases"] as! [AnyObject]
-        
-        GameImageIV.af_setImageWithURL(NSURL(string: self.game["bannerImageUrl"] as! String)!)
+
+        GameImageIV.af_setImageWithURL(NSURL(string: self.game["bannerUrl"] as! String)!)
         GameTitleLB.text = self.game["title"] as? String
-        GameAchievementsAmountLB.text = "\(self.game["achievementCount"] as! Int)"
-        GamerscoreLB.text = "\(self.game["gamerScore"] as! Int)"
+        GameAchievementsAmountLB.text = "\(self.game["achievementsCount"] as! Int)"
+        GamerscoreLB.text = "\(self.game["gamerscore"] as! Int)"
         DeveloperLB.text = self.game["developer"] as? String
         PublisherLB.text = self.game["publisher"] as? String
         GenreLB.text = genres.joinWithSeparator(" / ")

@@ -20,7 +20,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         PasswordTextField.delegate = self;
         EmailTextField.delegate = self;
         
-        //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
     }
@@ -28,24 +27,22 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBAction func login(sender: AnyObject) {
         
         guard let email = EmailTextField.text where EmailTextField.text?.characters.count > 5 else {
-            self.alertError("Email must be atleast 6 characters long.")
+            Common.dialogAlert(self, title: "Check Email", message: "Email must be atleast 6 characters long.")
             return
         }
         
         guard let password = PasswordTextField.text where PasswordTextField.text?.characters.count > 5 else {
-            self.alertError("Please check your password.")
+            Common.dialogAlert(self, title: "Check Password", message: "Please check your password.")
             return
         }
 
-        PFUser.logInWithUsernameInBackground(email, password: password) {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
+        ParseHandler.login(email, password: password, completion: {(success) -> Void in
+            if (success) {
                 self.navigationController!.popViewControllerAnimated(true)
             } else {
-                self.alertError("Something when wrong while logging you in. Please check your credentials.")
+                Common.dialogAlert(self, title: "Error", message: "Something when wrong while logging you in. Please check your credentials.")
             }
-        }
-
+        })
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -62,13 +59,5 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     func dismissKeyboard() {
         view.endEditing(true)
-    }
-    
-    private func alertError(error: String) {
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        
-        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
