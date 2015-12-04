@@ -123,6 +123,7 @@
         <!--Game DetailsVC-->
         <scene sceneID="REs-Ml-Abp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="nim-1T-7se" customClass="GameDetailsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WuR-ip-ZUt"/>
@@ -410,7 +411,6 @@
                         <outlet property="UsaReleaseLB" destination="2Xk-6B-YJA" id="0nf-tv-cjX"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2605" y="915"/>
         </scene>
@@ -457,6 +457,7 @@
         <!--Achievements-->
         <scene sceneID="Zqo-Xx-LVB">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-IB-RmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Achievements" automaticallyAdjustsScrollViewInsets="NO" id="lMN-24-h1x" customClass="AchievementsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BR5-R8-26Z"/>
@@ -566,9 +567,8 @@
                         <outlet property="tableView" destination="HHq-r1-UiF" id="R3b-e3-UaQ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-IB-RmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3372" y="915"/>
+            <point key="canvasLocation" x="3364" y="915"/>
         </scene>
         <!--SignUp-->
         <scene sceneID="e0t-1p-Skq">
