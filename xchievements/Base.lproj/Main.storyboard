@@ -16,14 +16,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="mLw-z4-yso" userLabel="Game">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="mLw-z4-yso" userLabel="Game" customClass="GameTVCC" customModule="xchievements" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="315"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="mLw-z4-yso" id="yFj-qk-yQs">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="315"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvh-YP-cG4">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvh-YP-cG4">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="315"/>
                                             <animations/>
                                         </imageView>
@@ -78,6 +78,8 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="GameArtworkIV" destination="bvh-YP-cG4" id="luX-xW-iHE"/>
+                                    <outlet property="GameTitleLB" destination="7T7-qL-WZR" id="lWV-re-U46"/>
                                     <segue destination="GE3-Pk-1sy" kind="show" identifier="ParentGameSegue" id="onG-nv-EyI">
                                         <segue key="commit" inheritsFrom="parent" id="byY-P3-SpD"/>
                                         <segue key="preview" inheritsFrom="commit" id="8hf-1k-XMy"/>
@@ -113,9 +115,6 @@
                             </fragment>
                         </attributedString>
                     </refreshControl>
-                    <connections>
-                        <outlet property="tableview" destination="FPc-bP-fQp" id="GRc-be-NgJ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RI-Hg-00Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

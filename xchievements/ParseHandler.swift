@@ -78,4 +78,36 @@ class ParseHandler{
             }
         }
     }
+    
+    static func getLatestGames(completion: (games: [PFObject]!, error: NSError?, success: Bool) -> Void) {
+        let query = PFQuery(className:"Game")
+        query.orderByDescending("updatedAt")
+        query.limit = 26
+        query.whereKey("show", equalTo: true)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                completion(games: objects!, error: nil, success: true)
+            } else {
+                completion(games: nil, error: error, success: false)
+            }
+        }
+    }
+    
+    static func getGameAchievements(gameId: String, completion: (achievements: [PFObject]!, error: NSError?, success: Bool) -> Void) {
+        
+        let query = PFQuery(className:"Achievement")
+        query.whereKey("gameId", equalTo: gameId)
+        query.orderByAscending("title")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                completion(achievements: objects, error: nil, success: true)
+            } else {
+                completion(achievements: nil, error: error, success: false)
+            }
+        }
+    }
 }

@@ -31,7 +31,8 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let titleLB = cell.viewWithTag(2) as! UILabel
         let descriptionLB = cell.viewWithTag(3) as! UILabel
         
-        bannerIV.af_setImageWithURL(NSURL(string: data["artworkUrl"] as! String)!, placeholderImage: UIImage(named:"Xchievements-Logo")!)
+        bannerIV.image = nil
+        bannerIV.af_setImageWithURL(NSURL(string: data["artworkUrl"] as! String)!)
         titleLB.text = data["title"] as? String
         descriptionLB.text = data["description"] as? String
         
@@ -59,16 +60,14 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     private func getAchievements(){
-        let query = PFQuery(className:"Achievement")
-        query.whereKey("gameId", equalTo: self.game["gameId"] as! String)
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
+        
+        ParseHandler.getGameAchievements(self.game["gameId"] as! String) { (achievements, error, success) -> Void in
             
-            if error == nil {
-                self.achievements = objects!
+            if (success) {
+                self.achievements = achievements
                 self.tableView.reloadData()
             } else {
-                print("Error: \(error!) \(error!.userInfo)")
+                print("\(error)")
             }
         }
     }
