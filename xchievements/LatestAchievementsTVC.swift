@@ -98,11 +98,11 @@ class LatestAchievementsTVC: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
             
-            if identifier == "ParentGameSegue" {
-                let gameInfoVC = segue.destinationViewController as? ParentGameVC
+            if identifier == "GameDetailsSegue" {
+                let gameDetailsVC = segue.destinationViewController as? GameDetailsVC
                 
                 if let index = self.tableView.indexPathForCell(sender as! UITableViewCell) {
-                    gameInfoVC!.game = self.games[index.row]
+                    gameDetailsVC!.game = self.games[index.row]
                 }
             }
         }

@@ -3,7 +3,7 @@ import Parse
 import Alamofire
 import AlamofireImage
 
-class GameInfoVC: UIViewController {
+class GameDetailsVC: UIViewController {
     
     @IBOutlet weak var GameImageIV: UIImageView!
     @IBOutlet weak var GameTitleLB: UILabel!
@@ -22,6 +22,8 @@ class GameInfoVC: UIViewController {
         
         self.view.backgroundColor = Common.PRIMARY_COLOR
         
+        self.title = self.game["title"] as? String
+        
         let genres = self.game["genre"] as! [String]
         let releases = game["releases"] as! [AnyObject]
 
@@ -37,6 +39,16 @@ class GameInfoVC: UIViewController {
         for release in releases {
             if release["region"] as? String == "usa" {
                 UsaReleaseLB.text = release["date"] as? String
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            
+            if identifier == "GameAchievementsSegue" {
+                let gameAchievementsVC = segue.destinationViewController as? AchievementsVC
+                gameAchievementsVC!.game = self.game
             }
         }
     }
