@@ -16,6 +16,7 @@ class Common {
     static let PRIMARY_COLOR = UIColor("#1A1A1A")
     static let SECONDARY_COLOR = UIColor("#333333")
     static let ACCENT_COLOR = UIColor("#f96816")
+    static let ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters.map { String($0) }
     
     /**
      Display Popup
@@ -44,5 +45,22 @@ class Common {
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         
         imageView.addMotionEffect(group)
+    }
+    
+    static func removeDividerPadding(cell: UITableViewCell){
+        // Remove seperator inset
+        if cell.respondsToSelector("setSeparatorInset:") {
+            cell.separatorInset = UIEdgeInsetsZero
+        }
+        
+        // Prevent the cell from inheriting the Table View's margin settings
+        if cell.respondsToSelector("setPreservesSuperviewLayoutMargins:") {
+            cell.preservesSuperviewLayoutMargins = false
+        }
+        
+        // Explictly set your cell's layout margins
+        if cell.respondsToSelector("setLayoutMargins:") {
+            cell.layoutMargins = UIEdgeInsetsZero
+        }
     }
 }
