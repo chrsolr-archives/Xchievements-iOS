@@ -95,6 +95,22 @@ class ParseHandler{
         }
     }
     
+    static func getGames(alphabetLetter: String, completion: (games: [PFObject]!, error: NSError?, success: Bool) -> Void) {
+        let query = PFQuery(className:"Game")
+        query.whereKey("title", hasPrefix: alphabetLetter)
+        query.limit = 1000
+        query.whereKey("show", equalTo: true)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                completion(games: objects!, error: nil, success: true)
+            } else {
+                completion(games: nil, error: error, success: false)
+            }
+        }
+    }
+    
     static func getGameAchievements(gameId: String, completion: (achievements: [PFObject]!, error: NSError?, success: Bool) -> Void) {
         
         let query = PFQuery(className:"Achievement")

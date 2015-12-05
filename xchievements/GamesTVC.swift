@@ -1,15 +1,18 @@
+//
+//  GamesTVC.swift
+//  xchievements
+//
+//  Created by Christian Soler on 12/5/15.
+//  Copyright © 2015 Christian Soler. All rights reserved.
+//
+
 import UIKit
 import Parse
-import Alamofire
-import AlamofireImage
 
-class LatestAchievementsTVC: UITableViewController {
+class GamesTVC: UITableViewController {
     
-    var loginButton: UIBarButtonItem!
     var lastCellIndexShowned = 0
-    var bannerUrl: String = ""
     var games = [PFObject]()
-    var banner: PFObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,26 +24,18 @@ class LatestAchievementsTVC: UITableViewController {
         
         self.refreshControl?.tintColor = UIColor("#ffffff")
         self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-        
-        self.getLatestGames()
-        
-        loginButton = self.navigationItem.rightBarButtonItem
+
+        self.getGames()
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        if (PFUser.currentUser() != nil) {
-            self.navigationItem.rightBarButtonItem = nil
-        }
-    }
-    
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.games.count
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! GameTVCC
         
@@ -54,6 +49,7 @@ class LatestAchievementsTVC: UITableViewController {
         Common.removeDividerPadding(cell)
         
         return cell
+
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -83,8 +79,8 @@ class LatestAchievementsTVC: UITableViewController {
         }
     }
     
-    private func getLatestGames(){
-        ParseHandler.getLatestGames { (games, error, success) -> Void in
+    private func getGames(){
+        ParseHandler.getGames("A") { (games, error, success) -> Void in
             if (success) {
                 self.games = games
                 self.tableView.reloadData()
@@ -97,6 +93,7 @@ class LatestAchievementsTVC: UITableViewController {
     
     func refresh(sender: AnyObject){
         self.lastCellIndexShowned = 0
-        self.getLatestGames()
+        self.getGames()
     }
+
 }

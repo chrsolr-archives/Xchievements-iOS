@@ -123,7 +123,6 @@
         <!--Game DetailsVC-->
         <scene sceneID="REs-Ml-Abp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="nim-1T-7se" customClass="GameDetailsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WuR-ip-ZUt"/>
@@ -411,8 +410,9 @@
                         <outlet property="UsaReleaseLB" destination="2Xk-6B-YJA" id="0nf-tv-cjX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="915"/>
+            <point key="canvasLocation" x="3445" y="72"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3AB-qo-nZG">
@@ -426,6 +426,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="rhJ-z2-wkq" kind="relationship" relationship="viewControllers" id="QdS-HL-B4y"/>
+                        <segue destination="9YK-pt-h71" kind="relationship" relationship="viewControllers" id="25t-Gd-4ZP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8d-vJ-XdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -457,7 +458,6 @@
         <!--Achievements-->
         <scene sceneID="Zqo-Xx-LVB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-IB-RmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Achievements" automaticallyAdjustsScrollViewInsets="NO" id="lMN-24-h1x" customClass="AchievementsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BR5-R8-26Z"/>
@@ -567,8 +567,9 @@
                         <outlet property="tableView" destination="HHq-r1-UiF" id="R3b-e3-UaQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-IB-RmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3364" y="915"/>
+            <point key="canvasLocation" x="4284" y="72"/>
         </scene>
         <!--SignUp-->
         <scene sceneID="e0t-1p-Skq">
@@ -576,13 +577,146 @@
                 <viewControllerPlaceholder storyboardName="SignUp" id="yne-O8-oFc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gg7-95-ll4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3055" y="-394"/>
+            <point key="canvasLocation" x="3063" y="-646"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="Sd8-cx-gwy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9YK-pt-h71" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" id="eDo-yi-jfc">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1cb-H8-mFo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oBh-5i-ZeI" kind="relationship" relationship="rootViewController" id="t1e-G1-JCD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpZ-dG-ntE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="843"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="ZOA-QH-rZ5">
+            <objects>
+                <tableViewController title="Games" id="oBh-5i-ZeI" customClass="GamesTVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yYh-sV-HXp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="XgT-hx-WNx" userLabel="Game" customClass="GameTVCC" customModule="xchievements" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="315"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="XgT-hx-WNx" id="TKl-B6-wC0">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="315"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MJh-7i-UW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="315"/>
+                                            <animations/>
+                                        </imageView>
+                                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-zT-MOV">
+                                            <rect key="frame" x="0.0" y="260" width="600" height="55"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-Mx-udF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GvQ-eY-v7R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <animations/>
+                                                    </view>
+                                                    <animations/>
+                                                    <blurEffect style="dark"/>
+                                                </visualEffectView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-gP-7H5">
+                                                    <rect key="frame" x="20" y="10" width="560" height="35"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" placeholder="YES" id="Dw7-Xw-dOT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="PAh-gP-7H5" firstAttribute="leading" secondItem="xdW-zT-MOV" secondAttribute="leading" constant="20" id="0FG-pO-lcw"/>
+                                                <constraint firstAttribute="bottom" secondItem="iBH-Mx-udF" secondAttribute="bottom" id="2wy-MD-Xdf"/>
+                                                <constraint firstItem="PAh-gP-7H5" firstAttribute="top" secondItem="xdW-zT-MOV" secondAttribute="top" constant="10" id="3K4-2C-6iM"/>
+                                                <constraint firstAttribute="trailing" secondItem="iBH-Mx-udF" secondAttribute="trailing" id="7RL-M1-LzC"/>
+                                                <constraint firstItem="iBH-Mx-udF" firstAttribute="leading" secondItem="xdW-zT-MOV" secondAttribute="leading" id="bkn-OR-M4I"/>
+                                                <constraint firstAttribute="bottom" secondItem="PAh-gP-7H5" secondAttribute="bottom" constant="10" id="lHl-TG-5FP"/>
+                                                <constraint firstAttribute="trailing" secondItem="PAh-gP-7H5" secondAttribute="trailing" constant="20" id="uPI-ba-A9e"/>
+                                                <constraint firstItem="iBH-Mx-udF" firstAttribute="top" secondItem="xdW-zT-MOV" secondAttribute="top" id="zbw-HL-ccF"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="MJh-7i-UW2" secondAttribute="trailing" id="8dN-Fu-GaY"/>
+                                        <constraint firstAttribute="bottom" secondItem="xdW-zT-MOV" secondAttribute="bottom" id="8xf-SG-t2N"/>
+                                        <constraint firstAttribute="bottom" secondItem="MJh-7i-UW2" secondAttribute="bottom" id="CMI-9S-OZF"/>
+                                        <constraint firstItem="MJh-7i-UW2" firstAttribute="top" secondItem="TKl-B6-wC0" secondAttribute="top" id="F54-Tf-QFA"/>
+                                        <constraint firstItem="xdW-zT-MOV" firstAttribute="leading" secondItem="TKl-B6-wC0" secondAttribute="leading" id="GyF-Ax-kuc"/>
+                                        <constraint firstAttribute="trailing" secondItem="xdW-zT-MOV" secondAttribute="trailing" id="Ht0-DT-E3R"/>
+                                        <constraint firstItem="MJh-7i-UW2" firstAttribute="leading" secondItem="TKl-B6-wC0" secondAttribute="leading" id="RZF-fU-5Ih"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="GameArtworkIV" destination="MJh-7i-UW2" id="sh5-Nf-0jA"/>
+                                    <outlet property="GameTitleLB" destination="PAh-gP-7H5" id="C8h-iO-Hoa"/>
+                                    <segue destination="nim-1T-7se" kind="show" identifier="GameDetailsSegue" id="dgT-6V-ArZ">
+                                        <segue key="commit" inheritsFrom="parent" id="ECa-Qr-dUc"/>
+                                        <segue key="preview" inheritsFrom="commit" id="qPH-hw-pVc"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oBh-5i-ZeI" id="g58-Dq-Wv9"/>
+                            <outlet property="delegate" destination="oBh-5i-ZeI" id="aJt-i6-WjE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Games" id="zT9-dH-7ZM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="XRl-iE-R8b"/>
+                        <barButtonItem key="rightBarButtonItem" title="A" id="Rrh-eT-450">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nPN-YM-tF5">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Pull to refresh">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zK-WU-dwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605" y="843"/>
         </scene>
     </scenes>
     <resources>
         <image name="Achievement-Icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WMf-jo-iw2"/>
+        <segue reference="dgT-6V-ArZ"/>
     </inferredMetricsTieBreakers>
 </document>
