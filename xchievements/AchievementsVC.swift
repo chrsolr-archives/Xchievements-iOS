@@ -36,7 +36,7 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         titleLB.text = data["title"] as? String
         descriptionLB.text = data["description"] as? String
         
-        self.removeDividerPadding(cell)
+        Common.removeDividerPadding(cell)
         
         return cell
     }
@@ -69,24 +69,6 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             } else {
                 print("\(error)")
             }
-        }
-    }
-
-    
-    private func removeDividerPadding(cell: UITableViewCell){
-        // Remove seperator inset
-        if cell.respondsToSelector("setSeparatorInset:") {
-            cell.separatorInset = UIEdgeInsetsZero
-        }
-        
-        // Prevent the cell from inheriting the Table View's margin settings
-        if cell.respondsToSelector("setPreservesSuperviewLayoutMargins:") {
-            cell.preservesSuperviewLayoutMargins = false
-        }
-        
-        // Explictly set your cell's layout margins
-        if cell.respondsToSelector("setLayoutMargins:") {
-            cell.layoutMargins = UIEdgeInsetsZero
         }
     }
 }
