@@ -68,8 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		371E084A1C06B51700452F40 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = xchievements/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		371E084B1C06B51700452F40 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = xchievements/Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		371E084A1C06B51700452F40 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = releet/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		371E084B1C06B51700452F40 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = releet/Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		3728A0ED1C1139AD00A0C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUp.storyboard; sourceTree = "<group>"; };
 		372AF4291C04E1A500A1148B /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		374688B11C17C2B800CFCF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/More.storyboard; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 				37A5F1491C00D1CD00DE3DC1 /* SupportingFiles */,
 			);
 			name = releet;
-			path = xchievements;
+			path = releet;
 			sourceTree = "<group>";
 		};
 		37A5F1491C00D1CD00DE3DC1 /* SupportingFiles */ = {
@@ -300,7 +300,7 @@
 			dependencies = (
 			);
 			name = releet;
-			productName = xchievements;
+			productName = releet;
 			productReference = 37A5F1341C00D18B00DE3DC1 /* releet.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -525,10 +525,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/xchievements",
-					"$(PROJECT_DIR)/xchievements/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/releet",
+					"$(PROJECT_DIR)/releet/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = xchievements/Info.plist;
+				INFOPLIST_FILE = releet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.releet;
 				PRODUCT_NAME = releet;
@@ -544,10 +544,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/xchievements",
-					"$(PROJECT_DIR)/xchievements/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/releet",
+					"$(PROJECT_DIR)/releet/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = xchievements/Info.plist;
+				INFOPLIST_FILE = releet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.releet;
 				PRODUCT_NAME = releet;
