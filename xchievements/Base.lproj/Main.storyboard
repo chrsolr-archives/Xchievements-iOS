@@ -76,7 +76,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
-                                <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="GameArtworkIV" destination="bvh-YP-cG4" id="luX-xW-iHE"/>
                                     <outlet property="GameTitleLB" destination="7T7-qL-WZR" id="lWV-re-U46"/>
@@ -104,7 +104,7 @@
                     <refreshControl key="refreshControl" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="DHk-Oa-nxB">
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <attributedString key="attributedTitle">
                             <fragment content="Pull to refresh">
                                 <attributes>
@@ -381,7 +381,7 @@
                             </scrollView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mni-0P-Dil" firstAttribute="top" secondItem="bLw-NV-RRs" secondAttribute="bottom" id="Ub2-Ya-HVL"/>
                             <constraint firstItem="bLw-NV-RRs" firstAttribute="leading" secondItem="RR7-IY-r04" secondAttribute="leading" id="bsA-Of-cfZ"/>
@@ -412,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44p-r0-tU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445" y="72"/>
+            <point key="canvasLocation" x="3403" y="478"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3AB-qo-nZG">
@@ -427,6 +427,7 @@
                     <connections>
                         <segue destination="rhJ-z2-wkq" kind="relationship" relationship="viewControllers" id="QdS-HL-B4y"/>
                         <segue destination="7Pa-4o-I9r" kind="relationship" relationship="viewControllers" id="Skw-m2-PP0"/>
+                        <segue destination="0g4-vm-4wP" kind="relationship" relationship="viewControllers" id="1iL-yI-BeG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8d-vJ-XdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -482,7 +483,6 @@
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Nb-ZJ-z5z">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                                     <animations/>
-                                                    <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-fJ-Q5i">
                                                     <rect key="frame" x="0.0" y="185" width="600" height="65"/>
@@ -535,7 +535,7 @@
                                                 </view>
                                             </subviews>
                                             <animations/>
-                                            <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="0Nb-ZJ-z5z" secondAttribute="bottom" id="9Wg-pb-Aov"/>
                                                 <constraint firstItem="0Nb-ZJ-z5z" firstAttribute="leading" secondItem="2Jr-dp-f2L" secondAttribute="leading" id="Ahb-Jt-ScL"/>
@@ -569,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-IB-RmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4284" y="72"/>
+            <point key="canvasLocation" x="4148" y="478"/>
         </scene>
         <!--SignUp-->
         <scene sceneID="e0t-1p-Skq">
@@ -662,7 +662,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="GameArtworkIV" destination="v4p-bD-TKU" id="2xG-Mk-tyD"/>
                                             <outlet property="GameTitleLB" destination="xR4-Za-Ilf" id="zdh-TM-brb"/>
@@ -726,11 +726,21 @@
             </objects>
             <point key="canvasLocation" x="1793" y="925"/>
         </scene>
+        <!--More-->
+        <scene sceneID="d2O-iD-EYD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="More" id="0g4-vm-4wP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5Df-AB-thS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5s-O4-iu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="1647"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Achievement-Icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AH6-d1-A77"/>
+        <segue reference="Dhb-Oh-JrU"/>
     </inferredMetricsTieBreakers>
 </document>

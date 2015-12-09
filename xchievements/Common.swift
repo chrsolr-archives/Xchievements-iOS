@@ -13,7 +13,8 @@ class Common {
     static let PARSE_APP_ID = "ZbsmNrnAoWvV4miJsVzkr4qwSlodOyFzhYWHECbI"
     static let PARSE_CLIENT_ID = "m7OKzx9QpP0feloktBKxlBIJXcjCNSWvI4H4LOJN"
     static let XBOX_API_API_KEY = "c298a7edee735d5559a219b0020a60fb9bb657dc"
-    static let PRIMARY_COLOR = UIColor("#1A1A1A")
+    static let PRIMARY_COLOR = UIColor("#333333")
+    //static let PRIMARY_COLOR = UIColor("#1A1A1A")
     static let SECONDARY_COLOR = UIColor("#333333")
     static let ACCENT_COLOR = UIColor("#f96816")
     static let ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters.map { String($0) }

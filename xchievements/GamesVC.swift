@@ -35,7 +35,7 @@ class GamesVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIP
         self.tableView.estimatedRowHeight = 315.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        self.tableView.backgroundColor = UIColor("#1A1A1A")
+        self.tableView.backgroundColor = Common.PRIMARY_COLOR
 
         self.getGames(self.dummyTF.text!)
     }

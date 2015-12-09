@@ -17,7 +17,7 @@ class LatestAchievementsTVC: UITableViewController {
         self.tableView.estimatedRowHeight = 315.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        self.tableView.backgroundColor = UIColor("#1A1A1A")
+        self.tableView.backgroundColor = Common.PRIMARY_COLOR
         
         self.refreshControl?.tintColor = UIColor("#ffffff")
         self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)

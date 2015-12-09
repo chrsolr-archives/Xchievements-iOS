@@ -20,6 +20,8 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.backgroundColor = Common.PRIMARY_COLOR
+        
         self.getAchievements()
     }
     
@@ -66,6 +68,7 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             if (success) {
                 self.achievements = achievements
                 self.tableView.reloadData()
+                self.navigationItem.prompt = "\(self.achievements.count) Achievements"
             } else {
                 print("\(error)")
             }

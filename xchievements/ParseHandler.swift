@@ -115,6 +115,7 @@ class ParseHandler{
         
         let query = PFQuery(className:"Achievement")
         query.whereKey("gameId", equalTo: gameId)
+        query.limit = 1000
         query.orderByAscending("title")
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
