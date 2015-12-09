@@ -8,7 +8,7 @@
         <!--Login-->
         <scene sceneID="tuv-0F-WIl">
             <objects>
-                <viewController title="Login" automaticallyAdjustsScrollViewInsets="NO" id="6nP-iR-oG9" customClass="LoginVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" automaticallyAdjustsScrollViewInsets="NO" id="6nP-iR-oG9" customClass="LoginVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jm1-XW-ifO"/>
                         <viewControllerLayoutGuide type="bottom" id="yTh-YG-QV8"/>
@@ -52,7 +52,7 @@
                                             <action selector="login:" destination="6nP-iR-oG9" eventType="touchUpInside" id="ZU4-1Z-lhc"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xchievements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOd-dz-U4d">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="releet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOd-dz-U4d">
                                         <rect key="frame" x="20" y="242" width="560" height="61"/>
                                         <animations/>
                                         <constraints>
@@ -125,7 +125,7 @@
         <!--Register-->
         <scene sceneID="Gxh-69-Q6f">
             <objects>
-                <viewController title="Register" automaticallyAdjustsScrollViewInsets="NO" id="2J2-D6-91s" customClass="RegisterVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" automaticallyAdjustsScrollViewInsets="NO" id="2J2-D6-91s" customClass="RegisterVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="46S-0d-69S"/>
                         <viewControllerLayoutGuide type="bottom" id="3VK-h1-cgk"/>
@@ -179,7 +179,7 @@
                                             <action selector="register:" destination="2J2-D6-91s" eventType="touchUpInside" id="6Rs-Sm-mDo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xchievements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-GJ-b1L">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="releet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-GJ-b1L">
                                         <rect key="frame" x="20" y="242" width="560" height="61"/>
                                         <animations/>
                                         <constraints>

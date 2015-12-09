@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:xchievements.xcodeproj">
+      location = "self:/Users/christiansoler/Development/iOS/xchievements/releet.xcodeproj">
    </FileRef>
 </Workspace>

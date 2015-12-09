@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37A5F1331C00D18B00DE3DC1"
-               BuildableName = "xchievements.app"
-               BlueprintName = "xchievements"
-               ReferencedContainer = "container:xchievements.xcodeproj">
+               BuildableName = "releet.app"
+               BlueprintName = "releet"
+               ReferencedContainer = "container:releet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37A5F1331C00D18B00DE3DC1"
-            BuildableName = "xchievements.app"
-            BlueprintName = "xchievements"
-            ReferencedContainer = "container:xchievements.xcodeproj">
+            BuildableName = "releet.app"
+            BlueprintName = "releet"
+            ReferencedContainer = "container:releet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37A5F1331C00D18B00DE3DC1"
-            BuildableName = "xchievements.app"
-            BlueprintName = "xchievements"
-            ReferencedContainer = "container:xchievements.xcodeproj">
+            BuildableName = "releet.app"
+            BlueprintName = "releet"
+            ReferencedContainer = "container:releet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37A5F1331C00D18B00DE3DC1"
-            BuildableName = "xchievements.app"
-            BlueprintName = "xchievements"
-            ReferencedContainer = "container:xchievements.xcodeproj">
+            BuildableName = "releet.app"
+            BlueprintName = "releet"
+            ReferencedContainer = "container:releet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

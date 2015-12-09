@@ -9,14 +9,14 @@
         <!--Latest Achievements-->
         <scene sceneID="Jjk-gF-eXV">
             <objects>
-                <tableViewController id="9hQ-Dd-lz1" customClass="LatestAchievementsTVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="9hQ-Dd-lz1" customClass="LatestAchievementsTVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="FPc-bP-fQp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="mLw-z4-yso" userLabel="Game" customClass="GameTVCC" customModule="xchievements" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="mLw-z4-yso" userLabel="Game" customClass="GameTVCC" customModule="releet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="315"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="mLw-z4-yso" id="yFj-qk-yQs">
@@ -123,7 +123,7 @@
         <!--Game DetailsVC-->
         <scene sceneID="REs-Ml-Abp">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nim-1T-7se" customClass="GameDetailsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nim-1T-7se" customClass="GameDetailsVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WuR-ip-ZUt"/>
                         <viewControllerLayoutGuide type="bottom" id="Mni-0P-Dil"/>
@@ -458,7 +458,7 @@
         <!--Achievements-->
         <scene sceneID="Zqo-Xx-LVB">
             <objects>
-                <viewController title="Achievements" automaticallyAdjustsScrollViewInsets="NO" id="lMN-24-h1x" customClass="AchievementsVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Achievements" automaticallyAdjustsScrollViewInsets="NO" id="lMN-24-h1x" customClass="AchievementsVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BR5-R8-26Z"/>
                         <viewControllerLayoutGuide type="bottom" id="jAv-uT-kD4"/>
@@ -582,7 +582,7 @@
         <!--Games-->
         <scene sceneID="JPD-Ze-s3Q">
             <objects>
-                <viewController id="Mvz-1A-wSm" customClass="GamesVC" customModule="xchievements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mvz-1A-wSm" customClass="GamesVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZg-YN-r5E"/>
                         <viewControllerLayoutGuide type="bottom" id="Za8-Dd-GI5"/>
@@ -602,7 +602,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="7t5-Zz-mHu" userLabel="Game" customClass="GameTVCC" customModule="xchievements" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="7t5-Zz-mHu" userLabel="Game" customClass="GameTVCC" customModule="releet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="315"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7t5-Zz-mHu" id="YSP-Gv-Gbp">

@@ -77,7 +77,7 @@
 		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
 		37846AC51C0EA8B0003916C8 /* GameTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTVCC.swift; sourceTree = "<group>"; };
 		37983D9E1C06907900AD780F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		37A5F1341C00D18B00DE3DC1 /* xchievements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xchievements.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A5F1341C00D18B00DE3DC1 /* releet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = releet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A5F13C1C00D18C00DE3DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37A5F1411C00D18C00DE3DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		37A5F12B1C00D18B00DE3DC1 = {
 			isa = PBXGroup;
 			children = (
-				37A5F1361C00D18B00DE3DC1 /* Xchievements */,
+				37A5F1361C00D18B00DE3DC1 /* releet */,
 				37A5F17F1C00D34B00DE3DC1 /* Frameworks */,
 				37A5F1351C00D18B00DE3DC1 /* Products */,
 			);
@@ -152,12 +152,12 @@
 		37A5F1351C00D18B00DE3DC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37A5F1341C00D18B00DE3DC1 /* xchievements.app */,
+				37A5F1341C00D18B00DE3DC1 /* releet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37A5F1361C00D18B00DE3DC1 /* Xchievements */ = {
+		37A5F1361C00D18B00DE3DC1 /* releet */ = {
 			isa = PBXGroup;
 			children = (
 				37A5F14B1C00D1DE00DE3DC1 /* Controllers */,
@@ -168,7 +168,7 @@
 				37A5F14D1C00D24900DE3DC1 /* Libs */,
 				37A5F1491C00D1CD00DE3DC1 /* SupportingFiles */,
 			);
-			name = Xchievements;
+			name = releet;
 			path = xchievements;
 			sourceTree = "<group>";
 		};
@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37A5F1331C00D18B00DE3DC1 /* xchievements */ = {
+		37A5F1331C00D18B00DE3DC1 /* releet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37A5F1461C00D18C00DE3DC1 /* Build configuration list for PBXNativeTarget "xchievements" */;
+			buildConfigurationList = 37A5F1461C00D18C00DE3DC1 /* Build configuration list for PBXNativeTarget "releet" */;
 			buildPhases = (
 				37A5F1301C00D18B00DE3DC1 /* Sources */,
 				37A5F1311C00D18B00DE3DC1 /* Frameworks */,
@@ -293,9 +293,9 @@
 			);
 			dependencies = (
 			);
-			name = xchievements;
+			name = releet;
 			productName = xchievements;
-			productReference = 37A5F1341C00D18B00DE3DC1 /* xchievements.app */;
+			productReference = 37A5F1341C00D18B00DE3DC1 /* releet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37A5F12F1C00D18B00DE3DC1 /* Build configuration list for PBXProject "xchievements" */;
+			buildConfigurationList = 37A5F12F1C00D18B00DE3DC1 /* Build configuration list for PBXProject "releet" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -327,7 +327,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37A5F1331C00D18B00DE3DC1 /* xchievements */,
+				37A5F1331C00D18B00DE3DC1 /* releet */,
 			);
 		};
 /* End PBXProject section */
@@ -514,8 +514,8 @@
 				);
 				INFOPLIST_FILE = xchievements/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.xchievements;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.releet;
+				PRODUCT_NAME = releet;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -533,8 +533,8 @@
 				);
 				INFOPLIST_FILE = xchievements/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.xchievements;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamrelos.releet;
+				PRODUCT_NAME = releet;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37A5F12F1C00D18B00DE3DC1 /* Build configuration list for PBXProject "xchievements" */ = {
+		37A5F12F1C00D18B00DE3DC1 /* Build configuration list for PBXProject "releet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37A5F1441C00D18C00DE3DC1 /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37A5F1461C00D18C00DE3DC1 /* Build configuration list for PBXNativeTarget "xchievements" */ = {
+		37A5F1461C00D18C00DE3DC1 /* Build configuration list for PBXNativeTarget "releet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37A5F1471C00D18C00DE3DC1 /* Debug */,
