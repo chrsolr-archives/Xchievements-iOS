@@ -20,7 +20,6 @@
 		37503DB81C13452D00B4FD2D /* GamesTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37503DB71C13452D00B4FD2D /* GamesTVCC.swift */; };
 		3753E5931C028CA000931FFF /* GameDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5921C028CA000931FFF /* GameDetailsVC.swift */; };
 		3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */; };
-		377CA2F61C1CCB5B00224778 /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377CA2F41C1CCB5B00224778 /* Browse.storyboard */; };
 		37846AC61C0EA8B0003916C8 /* GameTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37846AC51C0EA8B0003916C8 /* GameTVCC.swift */; };
 		37983D9F1C06907900AD780F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37983D9E1C06907900AD780F /* UIColorExtensions.swift */; };
 		37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */; };
@@ -47,6 +46,7 @@
 		37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1821C00F7A600DE3DC1 /* UIImageExtensions.swift */; };
 		37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */; };
 		37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */; };
+		37DEE2C11C1CD4CE00ACDD8B /* JHGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEE2C01C1CD4CE00ACDD8B /* JHGradientView.swift */; };
 		37E971D71C023D900076800B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E971D61C023D900076800B /* Assets.xcassets */; };
 		37E971DB1C0245300076800B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E971DA1C0245300076800B /* LoginVC.swift */; };
 		37F1B98C1C0BB62600B242E9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1B98B1C0BB62600B242E9 /* Common.swift */; };
@@ -80,7 +80,6 @@
 		37503DB71C13452D00B4FD2D /* GamesTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTVCC.swift; sourceTree = "<group>"; };
 		3753E5921C028CA000931FFF /* GameDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailsVC.swift; sourceTree = "<group>"; };
 		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
-		377CA2F51C1CCB5B00224778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Browse.storyboard; sourceTree = "<group>"; };
 		37846AC51C0EA8B0003916C8 /* GameTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTVCC.swift; sourceTree = "<group>"; };
 		37983D9E1C06907900AD780F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		37A5F1341C00D18B00DE3DC1 /* releet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = releet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +108,7 @@
 		37A5F1821C00F7A600DE3DC1 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		37A5F1851C01106F00DE3DC1 /* LatestAchievementsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestAchievementsTVC.swift; sourceTree = "<group>"; };
 		37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		37DEE2C01C1CD4CE00ACDD8B /* JHGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHGradientView.swift; sourceTree = "<group>"; };
 		37E971D61C023D900076800B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E971DA1C0245300076800B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		37F1B98B1C0BB62600B242E9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -207,7 +207,6 @@
 			children = (
 				3728A0EC1C1139AD00A0C7EB /* SignUp.storyboard */,
 				37A5F13B1C00D18C00DE3DC1 /* Main.storyboard */,
-				377CA2F41C1CCB5B00224778 /* Browse.storyboard */,
 				374688B01C17C2B800CFCF27 /* More.storyboard */,
 			);
 			name = Storyboards;
@@ -258,6 +257,7 @@
 		37A5F1841C00F7EA00DE3DC1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37DEE2C01C1CD4CE00ACDD8B /* JHGradientView.swift */,
 				37A5F1821C00F7A600DE3DC1 /* UIImageExtensions.swift */,
 				37A5F1ED1C01501700DE3DC1 /* UIViewExtensions.swift */,
 				37983D9E1C06907900AD780F /* UIColorExtensions.swift */,
@@ -345,7 +345,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377CA2F61C1CCB5B00224778 /* Browse.storyboard in Resources */,
 				37A5F1421C00D18C00DE3DC1 /* LaunchScreen.storyboard in Resources */,
 				374688B21C17C2B800CFCF27 /* More.storyboard in Resources */,
 				37E971D71C023D900076800B /* Assets.xcassets in Resources */,
@@ -394,6 +393,7 @@
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,
 				37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */,
 				374F9C6A1C077481007B9553 /* AchievementsVC.swift in Sources */,
+				37DEE2C11C1CD4CE00ACDD8B /* JHGradientView.swift in Sources */,
 				37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */,
 				37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */,
 			);
@@ -416,14 +416,6 @@
 				374688B11C17C2B800CFCF27 /* Base */,
 			);
 			name = More.storyboard;
-			sourceTree = "<group>";
-		};
-		377CA2F41C1CCB5B00224778 /* Browse.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				377CA2F51C1CCB5B00224778 /* Base */,
-			);
-			name = Browse.storyboard;
 			sourceTree = "<group>";
 		};
 		37A5F13B1C00D18C00DE3DC1 /* Main.storyboard */ = {

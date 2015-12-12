@@ -21,7 +21,6 @@ class GameDetailsVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = Common.PRIMARY_COLOR
-        
         self.title = self.game["title"] as? String
         
         let genres = self.game["genre"] as! [String]

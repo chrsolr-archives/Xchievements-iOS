@@ -11,11 +11,12 @@ import UIKit
 
 extension UIView {
     func layerGradient() {
-        let gradient: CAGradientLayer = CAGradientLayer()
+        let gradient = CAGradientLayer()
         
-        gradient.colors = [UIColor.clearColor().CGColor, UIColor.blackColor().CGColor]
-        gradient.locations = [0.0 , 0.5]
-        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
+        gradient.colors = [UIColor.clearColor().CGColor, Common.PRIMARY_COLOR.CGColor]
+        //gradient.locations = [0.0 , 1.0]
+        gradient.frame = self.bounds
+        //gradient.frame = CGRect(x: 0.0, y: self.frame.size.height/4, width: self.frame.size.width, height: self.frame.size.height)
         
         self.layer.insertSublayer(gradient, atIndex: 0)
     }

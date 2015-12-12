@@ -21,6 +21,7 @@ class AchievementsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         self.tableView.backgroundColor = Common.PRIMARY_COLOR
+        self.title = self.game["title"] as? String
         
         self.getAchievements()
     }

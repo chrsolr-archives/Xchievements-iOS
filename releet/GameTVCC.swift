@@ -9,9 +9,8 @@
 import UIKit
 
 class GameTVCC: UITableViewCell {
-
-    @IBOutlet weak var GameArtworkIV: UIImageView!
     
+    @IBOutlet weak var GameArtworkIV: UIImageView!
     @IBOutlet weak var GameTitleLB: UILabel!
     
     override func awakeFromNib() {
