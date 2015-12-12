@@ -16,7 +16,7 @@ class MoreTVC: UITableViewController {
         self.tableView.estimatedRowHeight = 70.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        self.tableView.backgroundColor = UIColor("#1A1A1A")
+        self.tableView.backgroundColor = Common.PRIMARY_COLOR
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

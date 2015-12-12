@@ -1,11 +1,3 @@
-//
-//  Common.swift
-//  xchievements
-//
-//  Created by Christian Soler on 11/29/15.
-//  Copyright © 2015 Christian Soler. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -13,10 +5,9 @@ class Common {
     static let PARSE_APP_ID = "ZbsmNrnAoWvV4miJsVzkr4qwSlodOyFzhYWHECbI"
     static let PARSE_CLIENT_ID = "m7OKzx9QpP0feloktBKxlBIJXcjCNSWvI4H4LOJN"
     static let XBOX_API_API_KEY = "c298a7edee735d5559a219b0020a60fb9bb657dc"
-    static let PRIMARY_COLOR = UIColor("#333333")
-    //static let PRIMARY_COLOR = UIColor("#1A1A1A")
-    static let SECONDARY_COLOR = UIColor("#333333")
-    static let ACCENT_COLOR = UIColor("#f96816")
+    static let PRIMARY_COLOR = UIColor("#097c9c")
+    static let SECONDARY_COLOR = UIColor("#9425f2")
+    static let ACCENT_COLOR = UIColor("#f9d406")
     static let ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters.map { String($0) }
     
     /**
