@@ -95,7 +95,7 @@
                     </navigationItem>
                     <refreshControl key="refreshControl" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="DHk-Oa-nxB">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.035294119268655777" green="0.48627451062202454" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
                         <attributedString key="attributedTitle">
                             <fragment content="Pull to refresh">
                                 <attributes>
@@ -174,7 +174,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="315" id="3mA-fT-roD"/>
                                             <constraint firstAttribute="trailing" secondItem="Xu7-os-hYn" secondAttribute="trailing" id="HG5-Du-jbD"/>
@@ -342,7 +341,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.035294119268655777" green="0.48627451062202454" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mni-0P-Dil" firstAttribute="top" secondItem="bLw-NV-RRs" secondAttribute="bottom" id="Ub2-Ya-HVL"/>
                             <constraint firstItem="bLw-NV-RRs" firstAttribute="leading" secondItem="RR7-IY-r04" secondAttribute="leading" id="bsA-Of-cfZ"/>
@@ -440,6 +439,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Nb-ZJ-z5z">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                                    <color key="backgroundColor" red="0.035294119268655777" green="0.48627451062202454" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-fJ-Q5i">
                                                     <rect key="frame" x="0.0" y="185" width="600" height="65"/>
@@ -486,7 +486,6 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="0Nb-ZJ-z5z" secondAttribute="bottom" id="9Wg-pb-Aov"/>
                                                 <constraint firstItem="0Nb-ZJ-z5z" firstAttribute="leading" secondItem="2Jr-dp-f2L" secondAttribute="leading" id="Ahb-Jt-ScL"/>
@@ -531,6 +530,7 @@
         <!--Games-->
         <scene sceneID="JPD-Ze-s3Q">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzj-Ys-krM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Mvz-1A-wSm" customClass="GamesVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZg-YN-r5E"/>
@@ -602,7 +602,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="cLt-XZ-5EC" secondAttribute="bottom" id="zDv-gv-iWR"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="GameArtworkIV" destination="v4p-bD-TKU" id="2xG-Mk-tyD"/>
                                             <outlet property="GameTitleLB" destination="xR4-Za-Ilf" id="zdh-TM-brb"/>
@@ -639,13 +638,13 @@
                         <outlet property="tableView" destination="aTD-9X-cfr" id="wdk-8z-p18"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wzj-Ys-krM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2605" y="925"/>
         </scene>
         <!--Browse-->
         <scene sceneID="k3e-eJ-uKo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkS-Ya-PgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Pa-4o-I9r" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Browse" id="SyC-Af-I5j">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
@@ -660,7 +659,6 @@
                         <segue destination="Mvz-1A-wSm" kind="relationship" relationship="rootViewController" id="MMq-Df-Bqg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FkS-Ya-PgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1793" y="925"/>
         </scene>
@@ -679,6 +677,6 @@
         <image name="Achievement-Icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dhb-Oh-JrU"/>
+        <segue reference="aUe-PO-SvP"/>
     </inferredMetricsTieBreakers>
 </document>
