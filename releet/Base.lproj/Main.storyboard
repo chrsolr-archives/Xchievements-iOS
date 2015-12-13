@@ -521,7 +521,7 @@
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTD-9X-cfr">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="315" id="7t5-Zz-mHu" userLabel="Game" customClass="GameTVCC" customModule="releet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="315"/>
@@ -559,6 +559,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.03529411927" green="0.48627451059999999" blue="0.61176472900000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="cLt-XZ-5EC" firstAttribute="leading" secondItem="YSP-Gv-Gbp" secondAttribute="leading" id="0cq-dn-zP1"/>
                                                 <constraint firstAttribute="trailing" secondItem="v4p-bD-TKU" secondAttribute="trailing" id="ICk-7V-Fdm"/>
@@ -581,7 +582,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aTD-9X-cfr" firstAttribute="leading" secondItem="8Pi-aC-cPd" secondAttribute="leading" id="5i1-6o-uRf"/>
                             <constraint firstItem="aTD-9X-cfr" firstAttribute="top" secondItem="8Pi-aC-cPd" secondAttribute="top" constant="64" id="6A2-Xl-OGg"/>
