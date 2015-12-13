@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
@@ -62,7 +63,6 @@
                                         <constraint firstAttribute="trailing" secondItem="2ez-aI-vkk" secondAttribute="trailing" id="uH3-IU-DPr"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="GameArtworkIV" destination="bvh-YP-cG4" id="luX-xW-iHE"/>
                                     <outlet property="GameTitleLB" destination="7T7-qL-WZR" id="lWV-re-U46"/>
@@ -368,7 +368,7 @@
                     <connections>
                         <segue destination="rhJ-z2-wkq" kind="relationship" relationship="viewControllers" id="QdS-HL-B4y"/>
                         <segue destination="7Pa-4o-I9r" kind="relationship" relationship="viewControllers" id="Skw-m2-PP0"/>
-                        <segue destination="0g4-vm-4wP" kind="relationship" relationship="viewControllers" id="1iL-yI-BeG"/>
+                        <segue destination="n1v-5z-dJr" kind="relationship" relationship="viewControllers" id="QA3-gY-Bz0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8d-vJ-XdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -607,7 +607,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzj-Ys-krM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="925"/>
+            <point key="canvasLocation" x="2605" y="809"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="MA1-8T-djw">
+            <objects>
+                <viewController id="jw4-ro-5AL" customClass="ProfileVC" customModule="releet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rDa-I5-Ne5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qcj-w9-0FR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ndf-gg-zC3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyH-7H-pVl">
+                                <rect key="frame" x="20" y="74" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bum-Jp-mLh"/>
+                                    <constraint firstAttribute="width" constant="100" id="scS-yM-aes"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ax6-mp-5cO">
+                                <rect key="frame" x="128" y="88" width="94" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-cf-iGV">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" placeholder="YES" id="Jas-Ag-o5c"/>
+                                            <constraint firstAttribute="width" constant="94" placeholder="YES" id="QjC-ED-wCM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="0.97647058963775635" green="0.83137255907058716" blue="0.023529412224888802" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-sG-ZyZ">
+                                        <rect key="frame" x="0.0" y="26" width="94" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" placeholder="YES" id="Icq-dE-Fzg"/>
+                                            <constraint firstAttribute="height" constant="22" placeholder="YES" id="tyj-cS-abI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.97647058959999999" green="0.83137255909999996" blue="0.02352941222" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdN-bE-BcJ">
+                                        <rect key="frame" x="0.0" y="48" width="94" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" placeholder="YES" id="wDs-uR-cRh"/>
+                                            <constraint firstAttribute="height" constant="22" placeholder="YES" id="zGl-nS-Rho"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.97647058959999999" green="0.83137255909999996" blue="0.02352941222" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294119268655777" green="0.48627451062202454" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ax6-mp-5cO" firstAttribute="top" secondItem="rDa-I5-Ne5" secondAttribute="bottom" constant="24" id="Mk9-5A-wob"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dyH-7H-pVl" secondAttribute="leading" id="QWd-7Z-0WG"/>
+                            <constraint firstItem="dyH-7H-pVl" firstAttribute="top" secondItem="rDa-I5-Ne5" secondAttribute="bottom" constant="10" id="plv-dY-CU1"/>
+                            <constraint firstItem="Ax6-mp-5cO" firstAttribute="leading" secondItem="dyH-7H-pVl" secondAttribute="trailing" constant="8" id="wLy-Yg-XCp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="TWb-zH-dAr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="y9S-PU-GiV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="RTG-vZ-N8Q">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logout:" destination="jw4-ro-5AL" id="wLE-34-TGF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="GamerscoreLB" destination="YPo-sG-ZyZ" id="9Bj-o4-8j8"/>
+                        <outlet property="GamertagLB" destination="bzv-cf-iGV" id="Jfm-0a-Av0"/>
+                        <outlet property="PlayerRep" destination="vdN-bE-BcJ" id="pCl-Tz-DPf"/>
+                        <outlet property="ProfileIV" destination="dyH-7H-pVl" id="MZI-Dw-Vng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDb-fI-jCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605" y="1607"/>
         </scene>
         <!--Browse-->
         <scene sceneID="k3e-eJ-uKo">
@@ -628,17 +711,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkS-Ya-PgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="925"/>
+            <point key="canvasLocation" x="1793" y="809"/>
         </scene>
-        <!--More-->
-        <scene sceneID="d2O-iD-EYD">
+        <!--Profile-->
+        <scene sceneID="zFT-es-iw9">
             <objects>
-                <viewControllerPlaceholder storyboardName="More" id="0g4-vm-4wP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5Df-AB-thS"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5s-O4-iu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n1v-5z-dJr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="W3F-52-Gea">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nAN-uW-8dd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jw4-ro-5AL" kind="relationship" relationship="rootViewController" id="wK1-HL-Yu2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmv-Lr-Xd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="1647"/>
+            <point key="canvasLocation" x="1793" y="1607"/>
         </scene>
     </scenes>
     <resources>

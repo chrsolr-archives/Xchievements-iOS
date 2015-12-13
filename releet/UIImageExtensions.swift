@@ -21,4 +21,13 @@ extension UIImageView {
 //                    }
 //            }
         }
+    
+    public func circularImage(){
+        self.layer.cornerRadius = self.frame.size.width / 2;
+    }
+    
+    public func border(size: Int, color: UIColor){
+        self.layer.borderWidth = CGFloat(size)
+        self.layer.borderColor = color.CGColor
+    }
 }

@@ -13,13 +13,12 @@
 		371E08511C06B89600452F40 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E084B1C06B51700452F40 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3728A0EE1C1139AD00A0C7EB /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3728A0EC1C1139AD00A0C7EB /* SignUp.storyboard */; };
 		372AF42A1C04E1A500A1148B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AF4291C04E1A500A1148B /* RegisterVC.swift */; };
-		374688B21C17C2B800CFCF27 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374688B01C17C2B800CFCF27 /* More.storyboard */; };
-		374688B41C17C47D00CFCF27 /* MoreTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374688B31C17C47D00CFCF27 /* MoreTVC.swift */; };
 		374F9C6A1C077481007B9553 /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9C691C077481007B9553 /* AchievementsVC.swift */; };
 		37503DB61C133DB100B4FD2D /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37503DB51C133DB100B4FD2D /* GamesVC.swift */; };
 		37503DB81C13452D00B4FD2D /* GamesTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37503DB71C13452D00B4FD2D /* GamesTVCC.swift */; };
 		3753E5931C028CA000931FFF /* GameDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5921C028CA000931FFF /* GameDetailsVC.swift */; };
 		3753E5951C02ABA100931FFF /* GameInfoTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */; };
+		377BA69B1C1DCB5100D86323 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA69A1C1DCB5100D86323 /* ProfileVC.swift */; };
 		37846AC61C0EA8B0003916C8 /* GameTVCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37846AC51C0EA8B0003916C8 /* GameTVCC.swift */; };
 		37983D9F1C06907900AD780F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37983D9E1C06907900AD780F /* UIColorExtensions.swift */; };
 		37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5F1371C00D18B00DE3DC1 /* AppDelegate.swift */; };
@@ -73,13 +72,12 @@
 		371E084B1C06B51700452F40 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = releet/Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		3728A0ED1C1139AD00A0C7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUp.storyboard; sourceTree = "<group>"; };
 		372AF4291C04E1A500A1148B /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		374688B11C17C2B800CFCF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/More.storyboard; sourceTree = "<group>"; };
-		374688B31C17C47D00CFCF27 /* MoreTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTVC.swift; sourceTree = "<group>"; };
 		374F9C691C077481007B9553 /* AchievementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
 		37503DB51C133DB100B4FD2D /* GamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		37503DB71C13452D00B4FD2D /* GamesTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTVCC.swift; sourceTree = "<group>"; };
 		3753E5921C028CA000931FFF /* GameDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailsVC.swift; sourceTree = "<group>"; };
 		3753E5941C02ABA100931FFF /* GameInfoTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfoTVCC.swift; sourceTree = "<group>"; };
+		377BA69A1C1DCB5100D86323 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		37846AC51C0EA8B0003916C8 /* GameTVCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTVCC.swift; sourceTree = "<group>"; };
 		37983D9E1C06907900AD780F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		37A5F1341C00D18B00DE3DC1 /* releet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = releet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +195,7 @@
 				372AF4291C04E1A500A1148B /* RegisterVC.swift */,
 				374F9C691C077481007B9553 /* AchievementsVC.swift */,
 				37503DB51C133DB100B4FD2D /* GamesVC.swift */,
-				374688B31C17C47D00CFCF27 /* MoreTVC.swift */,
+				377BA69A1C1DCB5100D86323 /* ProfileVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -207,7 +205,6 @@
 			children = (
 				3728A0EC1C1139AD00A0C7EB /* SignUp.storyboard */,
 				37A5F13B1C00D18C00DE3DC1 /* Main.storyboard */,
-				374688B01C17C2B800CFCF27 /* More.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -346,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A5F1421C00D18C00DE3DC1 /* LaunchScreen.storyboard in Resources */,
-				374688B21C17C2B800CFCF27 /* More.storyboard in Resources */,
 				37E971D71C023D900076800B /* Assets.xcassets in Resources */,
 				3728A0EE1C1139AD00A0C7EB /* SignUp.storyboard in Resources */,
 				37A5F13D1C00D18C00DE3DC1 /* Main.storyboard in Resources */,
@@ -387,12 +383,12 @@
 				37F1B98F1C0BC46D00B242E9 /* ParseHandler.swift in Sources */,
 				37A5F1861C01106F00DE3DC1 /* LatestAchievementsTVC.swift in Sources */,
 				37503DB61C133DB100B4FD2D /* GamesVC.swift in Sources */,
-				374688B41C17C47D00CFCF27 /* MoreTVC.swift in Sources */,
 				37503DB81C13452D00B4FD2D /* GamesTVCC.swift in Sources */,
 				3753E5931C028CA000931FFF /* GameDetailsVC.swift in Sources */,
 				37E971DB1C0245300076800B /* LoginVC.swift in Sources */,
 				37A5F1831C00F7A600DE3DC1 /* UIImageExtensions.swift in Sources */,
 				374F9C6A1C077481007B9553 /* AchievementsVC.swift in Sources */,
+				377BA69B1C1DCB5100D86323 /* ProfileVC.swift in Sources */,
 				37DEE2C11C1CD4CE00ACDD8B /* JHGradientView.swift in Sources */,
 				37A5F1EE1C01501700DE3DC1 /* UIViewExtensions.swift in Sources */,
 				37A5F1381C00D18C00DE3DC1 /* AppDelegate.swift in Sources */,
@@ -408,14 +404,6 @@
 				3728A0ED1C1139AD00A0C7EB /* Base */,
 			);
 			name = SignUp.storyboard;
-			sourceTree = "<group>";
-		};
-		374688B01C17C2B800CFCF27 /* More.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				374688B11C17C2B800CFCF27 /* Base */,
-			);
-			name = More.storyboard;
 			sourceTree = "<group>";
 		};
 		37A5F13B1C00D18C00DE3DC1 /* Main.storyboard */ = {

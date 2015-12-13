@@ -24,12 +24,17 @@ class LatestAchievementsTVC: UITableViewController {
         
         self.getLatestGames()
         
-        loginButton = self.navigationItem.rightBarButtonItem
+        self.loginButton = self.navigationItem.rightBarButtonItem
     }
     
     override func viewWillAppear(animated: Bool) {
         if (PFUser.currentUser() != nil) {
             self.navigationItem.rightBarButtonItem = nil
+            self.tabBarController?.tabBar.items![2].enabled = true
+            self.tabBarController?.tabBar.items![2].title = PFUser.currentUser()!["gamertag"] as? String
+        } else {
+            self.navigationItem.rightBarButtonItem = self.loginButton
+            self.tabBarController?.tabBar.items![2].enabled = false
         }
     }
     

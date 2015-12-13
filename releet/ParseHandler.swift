@@ -127,4 +127,18 @@ class ParseHandler{
             }
         }
     }
+    
+    static func getUserInfo(xuid: String, completion: (user: PFObject!, error: NSError?, success: Bool) -> Void) {
+        
+        let query = PFQuery(className:"_User")
+        query.whereKey("xuid", equalTo: xuid)
+        query.limit = 1
+        query.getFirstObjectInBackgroundWithBlock { (user: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                completion(user: user, error: nil, success: true)
+            } else {
+                completion(user: nil, error: error, success: false)
+            }
+        }
+    }
 }
